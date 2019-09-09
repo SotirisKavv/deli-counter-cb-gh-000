@@ -4,9 +4,9 @@ def line(array)
     puts "The line is currently empty."
   else
     i = 0
-    line = "The line is currently: "
+    line = "The line is currently:"
     while (i < array.size)
-      line << "#{i+1}. #{array[i]} "
+      line << " #{i+1}. #{array[i]}"
       i += 1
     end
     puts line

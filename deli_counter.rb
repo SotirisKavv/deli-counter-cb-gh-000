@@ -6,7 +6,7 @@ def line(array)
     i = 0
     print "The line is currently: "
     while (i < array.size)
-      print "#{i+1}. #{array[i]}"
+      print "#{i+1}. #{array[i]} "
       i += 1
     end
   end

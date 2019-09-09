@@ -11,3 +11,13 @@ def line(array)
     end
   end
 end
+
+def take_a_number(array, name)
+  array.push(name)
+  puts "Welcome, #{name}. You are number #{array.indexof(name)} in line."
+end
+
+def now_serving(array)
+  puts "Currently serving #{array.first}."
+  array.shift(array.first)
+end

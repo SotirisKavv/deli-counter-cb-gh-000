@@ -1,6 +1,6 @@
 # Write your code here.
 def line(array)
-  if (line.size == 0)
+  if (array.size == 0)
     puts "The line is currently empty."
   else
     i = 0
@@ -18,6 +18,10 @@ def take_a_number(array, name)
 end
 
 def now_serving(array)
-  puts "Currently serving #{array.first}."
-  array.shift(array.first)
+  if (array.size == 0)
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{array.first}."
+    array.shift(array.first)
+  end
 end
